@@ -14,6 +14,7 @@ const ItemDetailContainer = () => {
     <div>
             <ItemDetail product={product} />
             
+            .
     </div>
   )
 }
