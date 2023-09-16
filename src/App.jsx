@@ -6,25 +6,22 @@ import Footer from './Componentes/Footer/Footer'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
+import ItemCount from './Componentes/Counter/ItemCount';
+import ItemDetailContainer from './Componentes/ItemDetailContainer/ItemDetailContainer';
 
 
 
 function App() {
-  const [numeroSuma, funcionSumar] = useState(0)
 
   const titulo = "Soy un titulo APP"
   const subtitulo = "Soy un subtitulo APP"
 
-  const añadirSuma = () => {
-    funcionSumar(numeroSuma + 1)
-  }
   return (
     <div>
       <NavBar />
       <Titulo titulo={titulo} subtitulo={subtitulo} />
-      {numeroSuma}
-      <button onClick={añadirSuma} className="bg-dark"> + </button>
       <ItemListContainer saludo="Hola soy un SALUDO, buenos dias señor" />
+      <ItemDetailContainer />
       <Footer />
     </div>
   )
