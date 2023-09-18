@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#">Muebleria Arce</Navbar.Brand>
+        <Navbar.Brand href="/">Muebleria Arce</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -18,11 +18,11 @@ function NavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="#action2">Nosotros</Nav.Link>
             <NavDropdown title="Productos" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Muebles</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+              <NavDropdown.Item href="/category/muebles">Muebles</NavDropdown.Item>
+              <NavDropdown.Item href="/category/tecnologia">
                 Tecnologia
               </NavDropdown.Item>
               <NavDropdown.Divider />
