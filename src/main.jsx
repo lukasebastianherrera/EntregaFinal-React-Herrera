@@ -2,6 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import { initFireBase } from './firebase/config.js'
+
+initFireBase()
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
