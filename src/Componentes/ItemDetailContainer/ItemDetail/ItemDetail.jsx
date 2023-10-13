@@ -11,7 +11,6 @@ const ItemDetail = ({product}) => {
         addProduct({...product, quantity})
         setIsInCount(false)
     }
-    console.log(cartList)
   return (
     <div className='row'>
         <div className='col'>

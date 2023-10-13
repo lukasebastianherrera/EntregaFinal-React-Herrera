@@ -1,6 +1,5 @@
 import React from 'react'
 import "./footer.css"
-import Titulo from '../TItulo/Titulo'
 
 const Footer = () => {
   return (

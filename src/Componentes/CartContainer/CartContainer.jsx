@@ -10,7 +10,6 @@ const CartContainer = () => {
     email: ""})
     const [id, setId] = useState("")
     const {cartList, clearCart, totalQuantity, totalPrice, clearItem} = useCartContext()
-    console.log(cartList)
 
     const handleAddOrder = async (evt) => {
       evt.preventDefault()
@@ -20,8 +19,6 @@ const CartContainer = () => {
         return {id: prod.id, name: prod.name, proce: prod.price, quantity: prod.quantity}
       })
       order.total = totalPrice()
-      console.log(order)
-
 
       const queryDB = getFirestore()
       const ordersCollection = collection(queryDB, "orders")
@@ -36,9 +33,6 @@ const CartContainer = () => {
         })
         clearCart()
       })
-      // const queryUpdateProduct = doc(queryDB, "products", "7UQrGiwWEkCCK8mrraF3")
-      // updateDoc(queryUpdateProduct, {stock: 99})
-
     }
 
     const handleOnChange = (evt) => {

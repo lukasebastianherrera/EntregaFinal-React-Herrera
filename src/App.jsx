@@ -2,10 +2,8 @@ import { BrowserRouter , Routes, Route} from "react-router-dom"
 import {  CartContextProvider } from './Context/CartContext';
 
 import NavBar from './Componentes/NavBar/NavBar';
-import Titulo from './Componentes/TItulo/Titulo'
 import Footer from './Componentes/Footer/Footer'
 import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
-import ItemCount from './Componentes/Counter/ItemCount';
 import ItemDetailContainer from './Componentes/ItemDetailContainer/ItemDetailContainer';
 import CartContainer from "./Componentes/CartContainer/CartContainer";
 
@@ -13,9 +11,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-
-  const titulo = "Soy un titulo APP"
-  const subtitulo = "Soy un subtitulo APP"
 
   return (
       <BrowserRouter>
